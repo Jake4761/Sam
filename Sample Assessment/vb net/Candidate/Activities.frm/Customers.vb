@@ -157,8 +157,8 @@ Public Class Customers
                     txtEmail.Text = Trim(Mid(Customerdata(I), 40, 255))
                     txtAddress.Text = Trim(Mid(Customerdata(I), 295, 100))
                     txtPhone.Text = Trim(Mid(Customerdata(I), 395, 11))
-                    '  dtpDoB.Text = Trim(Mid(Customerdata(I), 406, 20))
-                    'Sadly DTP is bad and this doesnt work
+                    dtpDoB.Text = Trim(Mid(Customerdata(I), 406, 20)) & " 11:00AM"
+
                     txtFirstName.Text = Trim(Mid(Customerdata(I), 426, 35))
                     'These are all statements that assign the value in the text document line to the textboxes
                     MsgBox("SearchFound")
